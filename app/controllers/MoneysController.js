@@ -7,11 +7,13 @@ export class MoneysController {
 
   constructor() {
     console.log('live from moneycontroller.js!');
+
+    // money <----- 👀
+    AppState.on('money', this.drawMoney)
   }
 
-  addMoneys() {
-    moneysService.addMoneys()
-    this.drawMoney()
+  addMoneys(moneyAmount) {
+    moneysService.addMoneys(moneyAmount)
   }
 
   drawMoney() {

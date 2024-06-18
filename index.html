@@ -26,16 +26,20 @@
 
     <section class="container-fluid">
       <div class="row">
-        <div class="col-8">
+        <div class="col-6">
           <div class="d-flex justify-content-between my-3">
             <h3>Vending Machine</h3>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-6">
           <div class="d-flex align-items-center justify-content-between my-3">
-            <p id="moneyTotal" class="fw-bold fs-4 mb-0">$0.00</p>
-            <button id="addQuarter" class="btn btn-success ms-auto" onclick="app.MoneysController.addMoneys()">Add
-              Quarter</button>
+            <p id="moneyTotal" class="fw-bold fs-4 mb-0 me-auto">$0.00</p>
+            <button id="addLincoln" class="btn btn btn-success mx-4" onclick="app.MoneysController.addMoneys(5)">Add
+              $5.00</button>
+            <button id="addDollar" class="btn btn btn-success mx-4" onclick="app.MoneysController.addMoneys(1)">Add
+              $1.00</button>
+            <button id="addQuarter" class="btn btn-success mx-4" onclick="app.MoneysController.addMoneys(0.25)">Add
+              $0.25</button>
           </div>
         </div>
       </div>
@@ -47,7 +51,20 @@
       <div id="vendingBody" class="row justify-content-around">
 
       </div>
+
+      <div class="row justify-content-center ">
+        <div class="col-8">
+          <div
+            class="d-flex flex-column justify-content-center align-items-center text-center bg-light py-3 vended-card">
+            <h3>Your Snack Milord!</h3>
+            <p id="vendedSnack" class="vended-snack">🍕</p>
+            <p id="change"></p>
+            <button class="btn btn-outline-danger">Reset</button>
+          </div>
+        </div>
+      </div>
     </section>
+
 
   </main>
 

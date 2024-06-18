@@ -6,9 +6,8 @@ class MoneysService {
     console.log("We've gone deeper...");
   }
 
-  addMoneys() {
-    AppState.money += 0.25
-    console.log(AppState.money);
+  addMoneys(moneyAmount) {
+    AppState.money += moneyAmount
   }
 }
 

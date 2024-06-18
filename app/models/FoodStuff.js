@@ -1,3 +1,4 @@
+import { AppState } from "../AppState.js"
 
 
 export class FoodStuff {
@@ -18,10 +19,20 @@ export class FoodStuff {
               <h5 class="card-title">${this.name}</h5>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="card-text pt-3">$${this.price.toFixed(2)}</p>
-                <a href="#" class="btn btn-primary">Buy</a>
+                <button class="btn btn-primary" onclick="app.FoodStuffsController.purchaseFoodStuffs('${this.name}')" ${this.getDisableButton()}>Buy</button>
               </div>
             </div>
           </div>
         </div>`
   }
+
+  getDisableButton() {
+    if (AppState.money < this.price) {
+      return 'disabled'
+    }
+    else {
+      return
+    }
+  }
+
 }
