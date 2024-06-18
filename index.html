@@ -47,10 +47,15 @@
 
     <section class="container-fluid">
       <div class="row">
-        <div class="col-12">
+        <div class="col-8">
           <div class="d-flex justify-content-between my-3">
             <h3>Vending Machine</h3>
-            <button id="addQuarter" class="btn btn-success">Add Quarter</button>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="d-flex align-items-center justify-content-between my-3">
+            <p id="moneyTotal" class="fw-bold fs-4 mb-0">$0.00</p>
+            <button id="addQuarter" class="btn btn-success ms-auto">Add Quarter</button>
           </div>
         </div>
       </div>
@@ -60,45 +65,6 @@
 
     <section class="container-fluid">
       <div id="vendingBody" class="row justify-content-around">
-        <div class="col-3 d-flex justify-content-center">
-          <div class="card" style="width: 18rem;">
-            <div class="card-body">
-              <h4 id="foodEmoji" class="display-1 text-center pr-2">🍕</h4>
-              <hr>
-              <h5 class="card-title">Hot Za</h5>
-              <div class="d-flex justify-content-between align-items-center">
-                <p class="card-text pt-3">$5.45</p>
-                <a href="#" class="btn btn-primary">Buy</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-3 d-flex justify-content-center">
-          <div class="card" style="width: 18rem;">
-            <div class="card-body">
-              <h4 id="foodEmoji" class="display-1 text-center pr-2">🥞</h4>
-              <hr>
-              <h5 class="card-title">Syruppy Cakes</h5>
-              <div class="d-flex justify-content-between align-items-center">
-                <p class="card-text pt-3">$3.45</p>
-                <a href="#" class="btn btn-primary">Buy</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-3 d-flex justify-content-center">
-          <div class="card" style="width: 18rem;">
-            <div class="card-body">
-              <h4 id="foodEmoji" class="display-1 text-center pr-2">🥓</h4>
-              <hr>
-              <h5 class="card-title">Just Bacon</h5>
-              <div class="d-flex justify-content-between align-items-center">
-                <p class="card-text pt-3">$2.45</p>
-                <a href="#" class="btn btn-primary">Buy</a>
-              </div>
-            </div>
-          </div>
-        </div>
 
       </div>
     </section>
@@ -107,9 +73,6 @@
 
   <!-- SECTION -->
   <footer class="bg-dark text-light">
-    <div class="text-center no-select">
-      <p class="mb-0"><small>Made with 💖 by CodeWorks</small></p>
-    </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>

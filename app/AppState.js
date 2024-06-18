@@ -7,6 +7,7 @@ class ObservableAppState extends EventEmitter {
   /**@type {import('./models/Example.js').Example[]} */
   examples = []
 
+  money = 0
   foodStuffs = [
     new FoodStuff(
       'Hot Za',
@@ -22,6 +23,31 @@ class ObservableAppState extends EventEmitter {
       'Just Bacon',
       '🥓',
       2.25
+    ),
+    new FoodStuff(
+      'Meat on a Stick',
+      '🍖',
+      6.00
+    ),
+    new FoodStuff(
+      'Literally Raw Fish',
+      '🍣',
+      8.00
+    ),
+    new FoodStuff(
+      'Bean and Cheese',
+      '🌯',
+      5.50
+    ),
+    new FoodStuff(
+      'Cheese Wedge',
+      '🧀',
+      .75
+    ),
+    new FoodStuff(
+      'Raw Uncooked Kidney Beans',
+      '🫘',
+      0.25
     )
   ]
 }
