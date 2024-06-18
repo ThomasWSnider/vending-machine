@@ -1,12 +1,13 @@
 
 import { FoodStuffsController } from "./controllers/FoodStuffsController.js";
+import { MoneysController } from "./controllers/MoneysController.js";
 import { Router } from "./utils/Router.js";
 
 
 export const router = new Router([
   {
     path: '',
-    controllers: [FoodStuffsController],
+    controllers: [FoodStuffsController, MoneysController],
     view: ``
   },
   {
