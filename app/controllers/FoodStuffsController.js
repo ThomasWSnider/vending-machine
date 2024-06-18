@@ -5,5 +5,8 @@ export class FoodStuffsController {
     console.log('Food Stuffs Controller is loaded');
   }
 
+  drawFoodStuffs() {
+    console.log('I exist!');
+  }
 
 }
